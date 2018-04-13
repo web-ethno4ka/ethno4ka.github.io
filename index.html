@@ -1,0 +1,217 @@
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style/normalize.css">
+        <link rel="stylesheet" href="./style/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head>
+    
+    <body>
+       
+<!--
+        <div class="mobile">
+          <div class="box logo">
+             <a href="#">M@ksymenko</a>
+          </div>            
+          <a class="toggle open" href="#menu">open</a>  
+        </div>
+-->
+        
+        <div class="header-menu grid">
+<!--          <a class="toggle close" href="#">close</a>-->
+          <div class="box logo">
+             <a href="#">M@ksymenko</a>
+          </div>          
+          <div class="box">
+             <a href="#portfolio">Portfolio</a>
+          </div>
+          <div class="box">
+             <a href="#website">Do you need a Website?</a>
+          </div>
+          <div class="box">
+             <a href="#fotolia">My photostock works</a>
+          </div>
+<!--
+          <div class="box">
+             <a href="#">Testimonials</a>
+          </div>
+-->
+          <div class="box">
+             <a class="facebook height icon" href="#">
+             </a> 
+             <a class="instagram height icon" href="#">
+             </a>
+          </div>
+        </div>
+
+        <header class="main-header grid"> 
+            <div class="header-content grid">
+                    <h1>«Good design is as little design as possible»</h1><br>
+                    <h5>- Dieter Rams -</h5>
+                <div class="header-buttons">
+                    <a href="#portfolio" class="button">My portfolio</a>
+                    <a href="#fotolia" class="button">My photostock works</a>
+                </div>
+            </div>
+        </header>
+        
+        <section class="portfolio-section grid" id="portfolio">
+           
+            <div class="portfolio-item grid"><span>ReifenDirekt.de redesign</span><a href="https://goo.gl/KHzoTr" target="_blank"></a></div>
+            <div class="portfolio-item grid"><span>Giga-шини redesign</span><a href="https://goo.gl/ydYmvH" target="_blank"></a></div>
+            <div class="portfolio-item grid"><span>Creating logo for Gourmelo</span><a href="https://goo.gl/msiWvy" target="_blank"></a></div>
+            <div class="portfolio-item grid"><span>CarParts mobile version</span><a href="https://goo.gl/WVdEzR" target="_blank"></a></div>
+            <div class="portfolio-item grid"><span>Tirendo SERP redesign</span><a href="https://goo.gl/TXLzdy" target="_blank"></a></div>
+            <div class="portfolio-item grid"><span>Tyres.net Configurator redesign</span><a href="https://goo.gl/HFuCBL" target="_blank"></a></div>
+            <div class="portfolio-item grid"><span>See more projects</span><a href="https://goo.gl/WVN5QN" target="_blank"></a></div>
+<!--
+            <div class="portfolio-item grid"><span>Tyres.net Configurator redesign</span></div>
+            <div class="portfolio-item grid"><span>More projects</span></div>
+-->
+            
+            <div class="buttoncase">
+               <a href="https://goo.gl/WVN5QN" class="button" target="_blank">View more</a>                
+            </div>
+
+        </section>
+        
+        <section class="section-ready landing-section" id="website">
+            <div class="container grid">
+                <div class="ready-left">
+                    <h2>Do you need a Website?<br>I can help you with it!</h2>
+                    <p>A web site is like your giant public bulletin board where people can get information on how to find you, where you are located, what you have to offer, why your service is unique, and what's new in your company. It also is easily updated and changed frequently, and is a communication forum through which your customers can communicate back to you with questions, concerns and feedback on their needs.</p>
+                    <p class="part">I tell clients that getting a website is like getting a telephone. They both have similar cost structures. The website cost is like the cost of the phone and installation. You pay one time and the equipment is yours. The hosting cost is similar to your monthly phone bill — you own the equipment but you pay for the service of being able to use it. The domain name registry is like the phone number — a unique way to get in touch with only YOU.</p>
+                </div>
+                <div class="ready-right">
+                    <img src="assets/Desktop2.jpg" alt="" class="img-responsive">
+                </div>
+            </div> 
+        </section>
+        
+        <section class="formsection">
+            <div class="container">
+                <form id="contact" class="grid">
+                    <div><input type="text" name="name" placeholder="Name"></div>
+                    <div><input type="text" name="name" placeholder="Phone"></div>
+                    <div><input type="text" name="name" placeholder="Email"></div>
+                    <div><button class="button request" type="submit">Contact me</button></div>
+                </form>
+            </div> 
+        </section>
+        
+        <section class="landing-section section-blog" id="fotolia">
+            <div class="container">
+                <h2>My photostock works</h2>
+                <div class="blog-home grid">
+                  
+                   <a href="https://ru.fotolia.com/id/116101793" class="blog-item grid" target="_blank">
+                       <div class="blog-item-img img-1"></div>
+                       <div class="blog-item-content grid">
+                           <h4>Wedding pastry. "Love is" cake</h4>
+                       </div>
+                   </a>
+                   
+                   <a href="https://ru.fotolia.com/id/110570104" class="blog-item grid"  target="_blank">
+                       <div class="blog-item-img img-2"></div>
+                       <div class="blog-item-content grid">
+                           <h4>Colorful flat icon. Vanilla flower</h4>
+                       </div>
+                   </a>
+                   
+                   <a href="https://ru.fotolia.com/id/101059513" class="blog-item grid" target="_blank">
+                       <div class="blog-item-img img-3"></div>
+                       <div class="blog-item-content grid">
+                           <h4>London. Palace of Westminster, BigBen</h4>
+                       </div>
+                   </a>
+                   
+                   <a href="https://ru.fotolia.com/id/196486492" class="blog-item grid" target="_blank">
+                       <div class="blog-item-img img-4"></div>
+                       <div class="blog-item-content grid">
+                           <h4>Business icon set</h4>
+                       </div>
+                   </a>
+                   
+                   <a href="https://ru.fotolia.com/id/191475129" class="blog-item grid"  target="_blank">
+                       <div class="blog-item-img img-5"></div>
+                       <div class="blog-item-content grid">
+                           <h4>Season sales. Lettering</h4>
+                       </div>
+                   </a>
+                   
+                   <a href="https://ru.fotolia.com/id/102510127" class="blog-item grid"  target="_blank">
+                       <div class="blog-item-img img-6"></div>
+                       <div class="blog-item-content grid">
+                           <h4>Wishcard with flowers. 8 March</h4>
+                       </div>
+                   </a>
+                   
+                   <div class="buttoncase">
+                       <a href="https://ru.fotolia.com/p/203693834#" class="button" target="_blank" class="button">View more</a>                
+                   </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-log">
+                   <span>Have a nice day!</span>
+                </div>
+<!--                <div class="footer-copy">©</div>-->
+            </div>
+            
+        </footer>
+        
+        <script>
+             
+            $(document).ready(function(){
+	           $(".header-menu  a, .header-buttons a").on("click", function (event) {
+                   event.preventDefault();
+                   var id  = $(this).attr('href'), top = $(id).offset().top;
+                   $('body,html').animate({scrollTop: top}, 1500);
+               });
+                $(".portfolio-item").click(function(){
+                    window.open($(this).find("a").attr("href")); 
+                    return false;
+                });
+                $("#contact").submit(function(e){
+                    e.preventDefault();
+                    $.ajax({
+                        url: "https://api.mailgun.net/v3/sandbox3a68f0c5521e4976a9baaad7bbdd6ed1.mailgun.org/messages",
+                        method: 'POST',
+                        //                        username: 'api',
+//                        password: 'key-2c230cf9ce27a806fdc4ccaa9d26efeb',
+                        headers: {
+                            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+                            "Authorization": "Basic " + btoa("api:key-2c230cf9ce27a806fdc4ccaa9d26efeb")
+                        },
+                        data:{
+                            "html": `<h1>TITLE-HERE</h1>`,
+                            "subject": `Subject 1`,
+                            "from": "User<mailgun@sandbox3a68f0c5521e4976a9baaad7bbdd6ed1.mailgun.org>",
+                            "to": "ethno4ka@gmail.com"
+                        },
+                    })
+                })
+                
+                
+            });
+            
+                        
+        
+            
+        </script>
+
+    </body>
+    
+©</html>
