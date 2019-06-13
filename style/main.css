@@ -79,20 +79,17 @@ p {
 .box {
     text-align: center;
     font-size: 14px;  
-    color: #fff;
-    padding-top: 19px;
-     
+    color: #fff;  
 }
 
 .logo {
-    font-family: 'Rammetto One';
-    font-size: 18px;
-    padding-top: 19px;
+    font-family: 'Geometria';
+    font-size: 20px;
 }
 
 .header-menu {
-    background-color: #444;
-    align-content: center;
+    background-color: #004d61;
+    align-items: center;
     width: auto;
     grid-gap: 10px;
     grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
@@ -105,7 +102,7 @@ p {
 
 
 .header-menu a:hover {
-    color: #ffa300;
+    color: #f5587b;
 }
 
 
@@ -138,13 +135,8 @@ p {
 }
 
 .main-header {
-    background: url(../assets/top1.jpg);
-    min-height: 100vh; 
-    background-size: cover;
-    background-position: center;
     position: relative;
-    align-content: center;
-    vertical-align: center;
+    height: 60vh;
 }
 
 /*
@@ -159,12 +151,33 @@ p {
 	opacity: 0.6;    
 }
 */
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.header-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 	
 .header-content {
-    z-index: 2;
-    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     padding: 60px 20px;
+    color: #003846;
+    z-index: 2;
 } 
 
 
@@ -175,7 +188,7 @@ p {
     border: none;
     color: #fff;
     text-decoration: none;
-    background-color: #fe7235;
+    background-color: #f5587b;
     padding: 12px 30px;
     font-size: 14px;
     letter-spacing: 1px;
@@ -189,7 +202,7 @@ p {
 
 .button:hover {
     color: #fff;
-    background: #ff8c38;
+    background: rgb(255, 72, 127);
     transition: all .5s ease;
     	-webkit-transition: all .5s ease;
     	-moz-transition: all .5s ease; 
@@ -198,7 +211,7 @@ p {
 
 .button:active {
     color: #fff;
-    background: #c36641;
+    background: rgb(218, 54, 103);
     transition: all .5s ease;
     	-webkit-transition: all .5s ease;
     	-moz-transition: all .5s ease; 
@@ -227,12 +240,12 @@ p {
 }
 
 .portfolio-item:hover {
-    color: #fe7235;
-    
+    color: #f5587b;    
 }
 
 .portfolio-item:hover::before{
-    opacity: .75;
+    background-color: rgb(255, 255, 255);
+    opacity: .8;
 } 
 
 .portfolio-item::before {
@@ -242,9 +255,9 @@ p {
     left: 0;
     right: 0;
     bottom: 0;	
-	background-color: #293A43;
-	opacity: 0.4;  
-    transition: opacity .5s ease;
+	background-color: rgb(20, 68, 92);
+	opacity: 0.6;  
+    transition: opacity .6s ease-in-out;
  }
 
 .portfolio-item:nth-child(1){
@@ -344,7 +357,7 @@ p {
 
 .formsection {
     padding: 20px;
-    background-color: #464646;
+    background-color: #004D61;
 }
 
 form {
