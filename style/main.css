@@ -202,7 +202,7 @@ p {
 
 .button:hover {
     color: #fff;
-    background: rgb(255, 72, 127);
+    background: #eb466a;
     transition: all .5s ease;
     	-webkit-transition: all .5s ease;
     	-moz-transition: all .5s ease; 
