@@ -69,15 +69,65 @@ p {
     display: none;
 }
 
+.navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(70);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+}
+
 .navigation__button {
-    background-color: #fff;
+    background-color: rgb(223, 51, 96);
     height: 70px;
     width: 70px;
+    text-align: center;
     border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(rgb(0, 0, 0), .1);
     position: fixed;
     top: 60px;
     right: 25px;
     z-index: 10;
+    cursor: pointer;
+}
+
+.navigation__button:hover .navigation__icon::before {
+    top: -10px;
+}
+
+.navigation__button:hover .navigation__icon::after {
+    top: 10px;
+}
+
+.navigation__icon {
+    position: relative;
+    margin-top: 35px;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    display: inline-block; 
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.navigation__icon::before {
+    top: -8px;
+}
+
+.navigation__icon::after {
+    top: 8px;
 }
 
 .navigation__background {
@@ -89,21 +139,23 @@ p {
     right: 30px;
     background-image: radial-gradient(#f34573, #2a6171);
     z-index: 5;
-    transform: scale(70);
-     
+    transition: transform .8s cubic-bezier(0.86, 0 , 0.07, 1);     
 }
 
 .navigation__nav {
     height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;       /* nav appearing from the left side of the screen */
     z-index: 7;
+    opacity: 0;  /* hides the navigation items, but there are still there*/
+    width: 0;   /* fixing our previous problem with the navigation items*/
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navigation__list {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -126,7 +178,7 @@ p {
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 220%;        /* background exists on the right side, out of view */ 
-    transition: all .5s;
+    transition: all .4s;
 }
 
 .navigation__link:hover,
