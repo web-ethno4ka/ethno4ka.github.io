@@ -193,7 +193,6 @@ p {
     margin-right: 10px;
 }
 
-
 .mobile {
     display: none;
 }
@@ -232,11 +231,9 @@ p {
     color: #fff;
 }
 
-
 .header-menu a:hover {
     color: #f5587b;
 }
-
 
 .facebook {
      background-image: url(../assets/facebook.svg);
@@ -311,7 +308,6 @@ p {
     color: #003846;
     z-index: 2;
 } 
-
 
 .button {
     width: 250px;
@@ -509,6 +505,10 @@ input{
 
 input:focus {
     background-color: #ffffff;     
+}
+
+input:focus::placeholder {
+    opacity: 0;
 }
 
 button.request {
